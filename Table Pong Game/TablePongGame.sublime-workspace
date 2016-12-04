@@ -28,31 +28,10 @@
 	"buffers":
 	[
 		{
-			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 1364,
+				"buffer_size": 0,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "--max_temp.pig: Finds the maximum temperature by year\nrecords = LOAD 'input/ncdc/micro-tab/sample.txt'\n\tAS (year:chararray, temperature:int, quality:int);\nfiltered_records = FILTER records BY temperature != 9999 AND quality IN (0, 1, 4, 5, 9);\ngrouped_records = GROUP filtered_records BY year;\nmax_temp = FOREACH grouped_records GENERATE group, MAX(filtered_records.temperature);\nDUMP max_temp;\n",
-			"settings":
-			{
-				"buffer_size": 395,
-				"line_ending": "Windows",
-				"name": "--max_temp.pig: Finds the maximum temperature by y"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control\n---------------\n\n  Version 3.2 Release Notes\n  \n  This version of Package Control focuses on bug-fixes, with notable changes\n  including:\n  \n   - OS X TLS trust roots are exported using APIs to prevent the error message\n     displayed to some El Capitan users\n  \n   - Theme, syntax and color scheme upgrades have been improved and should result\n     in fewer popup messages when filenames change\n  \n   - Various bugs related to installing dependencies have been resolved\n  \n   - Windows and OS X trust roots are exported in a way that valid/invalid purpose\n     information is now communicated to the OpenSSL-based Python ssl module\n  \n   - Further improvements have been made to handling of git/hg package upgrades\n  \n   - The Windows WinINet downloader has improved compatibility with Windows 10\n",
-			"settings":
-			{
-				"buffer_size": 865,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
 			}
 		}
 	],
@@ -97,6 +76,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/jubin/OneDrive/Documents/GitHub/Games/Table Pong Game/main.lua",
 		"/C/Users/jubin/OneDrive/Documents/GitHub/Games/Basic Pong Game/main.lua",
 		"/C/Users/jubin/Downloads/Basic Pong/main.lua",
 		"/C/Users/jubin/OneDrive/Documents/GitHub/Games/Basic Pong Game/BasicPongGame.sublime-project",
@@ -140,57 +120,27 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1364,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 395,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"auto_name": "--max_temp.pig: Finds the maximum temperature by y",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -198,36 +148,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 865,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								865,
-								865
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
